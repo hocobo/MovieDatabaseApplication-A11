@@ -1,0 +1,214 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Carls\\Documents\\Jake School\\Fall 2022 (2)\\.Net Database Programming\\Module11\\MovieDatabaseApplication-A11\\MovieDatabaseApplication-A11.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Carls\\Documents\\Jake School\\Fall 2022 (2)\\.Net Database Programming\\Module11\\MovieDatabaseApplication-A11\\MovieDatabaseApplication-A11.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Carls\\Documents\\Jake School\\Fall 2022 (2)\\.Net Database Programming\\Module11\\MovieDatabaseApplication-A11\\MovieDatabaseApplication-A11.csproj",
+        "projectName": "MovieDatabaseApplication-A11",
+        "projectPath": "C:\\Users\\Carls\\Documents\\Jake School\\Fall 2022 (2)\\.Net Database Programming\\Module11\\MovieDatabaseApplication-A11\\MovieDatabaseApplication-A11.csproj",
+        "packagesPath": "C:\\Users\\Carls\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Carls\\Documents\\Jake School\\Fall 2022 (2)\\.Net Database Programming\\Module11\\MovieDatabaseApplication-A11\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Carls\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Carls\\Documents\\Jake School\\Fall 2022 (2)\\.Net Database Programming\\Module11\\MovieLibraryOO\\MovieLibraryEntities\\MovieLibraryEntities.csproj": {
+                "projectPath": "C:\\Users\\Carls\\Documents\\Jake School\\Fall 2022 (2)\\.Net Database Programming\\Module11\\MovieLibraryOO\\MovieLibraryEntities\\MovieLibraryEntities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "ConsoleTables": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[30.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "NReco.Logging.File": {
+              "target": "Package",
+              "version": "[1.1.5, )"
+            },
+            "Serilog.Sinks.SpectreConsole": {
+              "target": "Package",
+              "version": "[0.3.3, )"
+            },
+            "Spectre.Console": {
+              "target": "Package",
+              "version": "[0.45.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Carls\\Documents\\Jake School\\Fall 2022 (2)\\.Net Database Programming\\Module11\\MovieLibraryOO\\MovieLibraryEntities\\MovieLibraryEntities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Carls\\Documents\\Jake School\\Fall 2022 (2)\\.Net Database Programming\\Module11\\MovieLibraryOO\\MovieLibraryEntities\\MovieLibraryEntities.csproj",
+        "projectName": "MovieLibraryEntities",
+        "projectPath": "C:\\Users\\Carls\\Documents\\Jake School\\Fall 2022 (2)\\.Net Database Programming\\Module11\\MovieLibraryOO\\MovieLibraryEntities\\MovieLibraryEntities.csproj",
+        "packagesPath": "C:\\Users\\Carls\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Carls\\Documents\\Jake School\\Fall 2022 (2)\\.Net Database Programming\\Module11\\MovieLibraryOO\\MovieLibraryEntities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Carls\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
