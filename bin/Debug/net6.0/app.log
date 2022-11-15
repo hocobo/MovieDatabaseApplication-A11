@@ -59,3 +59,30 @@
 2022-11-15T09:04:59.7848067-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Updating an existing movie
 2022-11-15T09:13:05.9810004-06:00	INFO	[MovieDatabaseApplication_A11.Dao.FileService]	[0]	Here is some information
 2022-11-15T09:13:16.1044653-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Listing movies from database
+2022-11-15T09:28:46.8470376-06:00	INFO	[MovieDatabaseApplication_A11.Dao.FileService]	[0]	Here is some information
+2022-11-15T09:28:54.3320171-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Listing movies from database
+2022-11-15T09:29:01.8569656-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Deleting a movie
+2022-11-15T09:29:20.2672875-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Listing movies from database
+2022-11-15T09:29:26.0674771-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Adding a new movie
+2022-11-15T09:29:37.7159369-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Movie added
+2022-11-15T09:29:52.5197732-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Listing movies from database
+2022-11-15T09:29:58.9041964-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Updating an existing movie
+2022-11-15T09:30:17.1184557-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Listing movies from database
+2022-11-15T09:30:26.5777988-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Updating an existing movie
+2022-11-15T09:31:34.6543403-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Updating an existing movie
+2022-11-15T09:32:04.4487969-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Deleting a movie
+2022-11-15T09:33:07.1777062-06:00	INFO	[MovieDatabaseApplication_A11.Dao.FileService]	[0]	Here is some information
+2022-11-15T09:33:12.2621461-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Listing movies from database
+2022-11-15T09:33:24.9059549-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Updating an existing movie
+2022-11-15T09:33:43.5388573-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Listing movies from database
+2022-11-15T09:33:58.0221678-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Listing movies from database
+2022-11-15T09:34:01.1166807-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Listing movies from database
+2022-11-15T09:34:02.3316694-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Listing movies from database
+2022-11-15T09:34:03.6740899-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Listing movies from database
+2022-11-15T09:34:09.3357829-06:00	INFO	[MovieDatabaseApplication_A11.Dao.FileService]	[0]	Here is some information
+2022-11-15T09:34:10.7920976-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Listing movies from database
+2022-11-15T09:34:38.4442606-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Deleting a movie
+2022-11-15T09:34:46.1699208-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Listing movies from database
+2022-11-15T09:35:16.6497448-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Adding a new movie
+2022-11-15T09:35:28.0134198-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Movie added
+2022-11-15T09:35:30.0858289-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Listing movies from database

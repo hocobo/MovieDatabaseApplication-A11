@@ -128,6 +128,33 @@ namespace MovieDatabaseApplication_A11
         }
         public void DeleteMovie()
         {
+            using (var db = new MovieContext())
+            {
+                try
+                {
+                    Console.WriteLine("Type entire movie title to delete ");
+                    var movieDelete = Console.ReadLine();
+                    if (String.IsNullOrEmpty(movieDelete))
+                        Console.WriteLine("\nInvalid Input");
+                    else
+                    {
+                        var movie = db.Movies.Where(x => x.Title.ToLower() == movieDelete.ToLower())
+                                            .FirstOrDefault();
+                        db.Movies.Remove(movie);
+                        db.SaveChanges();
+                    }
+
+                }              
+                catch (ArgumentNullException)
+                {
+                    Console.WriteLine("\nNot a valid movie. Make sure to input entire movie title. ");
+                }
+                catch (NullReferenceException)
+                {
+                    Console.WriteLine("\nNot a valid movie. Make sure to input entire movie title. ");
+                }
+
+            }
 
         }
         
