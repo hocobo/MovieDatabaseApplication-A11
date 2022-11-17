@@ -1,6 +1,6 @@
-using MovieLibraryEntities.Models;
+using MovieDatabaseApplication_A11.Models;
 
-namespace MovieLibraryEntities.Dao
+namespace MovieDatabaseApplication_A11.Dao
 {
     public interface IRepository
     {

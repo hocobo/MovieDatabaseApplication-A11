@@ -1,4 +1,4 @@
-﻿namespace MovieLibraryEntities.Models
+﻿namespace MovieDatabaseApplication_A11.Models
 {
     public class Movie
     {

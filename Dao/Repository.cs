@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MovieLibraryEntities.Context;
-using MovieLibraryEntities.Models;
+using MovieDatabaseApplication_A11.Context;
+using MovieDatabaseApplication_A11.Models;
 
-namespace MovieLibraryEntities.Dao
+namespace MovieDatabaseApplication_A11.Dao
 {
     public class Repository : IRepository, IDisposable
     {

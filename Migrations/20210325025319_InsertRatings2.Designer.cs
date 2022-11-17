@@ -5,8 +5,8 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MovieLibraryEntities.Context;
-using MovieLibraryEntities.Models;
+using MovieDatabaseApplication_A11.Context;
+using MovieDatabaseApplication_A11.Models;
 
 namespace MovieDatabaseApplication_A11.Migrations
 {

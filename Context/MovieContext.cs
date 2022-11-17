@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using MovieLibraryEntities.Models;
+using MovieDatabaseApplication_A11.Models;
 
-namespace MovieLibraryEntities.Context
+namespace MovieDatabaseApplication_A11.Context
 {
     public class MovieContext : DbContext
     {
