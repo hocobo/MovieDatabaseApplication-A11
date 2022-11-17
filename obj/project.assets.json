@@ -1633,21 +1633,6 @@
             "rid": "win"
           }
         }
-      },
-      "MovieLibraryEntities/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Proxies": "6.0.10",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
-          "Microsoft.Extensions.Configuration.Json": "6.0.0"
-        },
-        "compile": {
-          "bin/placeholder/MovieLibraryEntities.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MovieLibraryEntities.dll": {}
-        }
       }
     }
   },
@@ -4573,11 +4558,6 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "MovieLibraryEntities/1.0.0": {
-      "type": "project",
-      "path": "../MovieLibraryOO/MovieLibraryEntities/MovieLibraryEntities.csproj",
-      "msbuildProject": "../MovieLibraryOO/MovieLibraryEntities/MovieLibraryEntities.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4594,7 +4574,6 @@
       "Microsoft.Extensions.Logging >= 7.0.0",
       "Microsoft.Extensions.Logging.Console >= 7.0.0",
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
-      "MovieLibraryEntities >= 1.0.0",
       "NReco.Logging.File >= 1.1.5",
       "Serilog.Sinks.SpectreConsole >= 0.3.3",
       "Spectre.Console >= 0.45.0"
@@ -4631,11 +4610,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\Users\\Carls\\Documents\\Jake School\\Fall 2022 (2)\\.Net Database Programming\\Module11\\MovieLibraryOO\\MovieLibraryEntities\\MovieLibraryEntities.csproj": {
-              "projectPath": "C:\\Users\\Carls\\Documents\\Jake School\\Fall 2022 (2)\\.Net Database Programming\\Module11\\MovieLibraryOO\\MovieLibraryEntities\\MovieLibraryEntities.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
