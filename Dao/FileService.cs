@@ -6,17 +6,13 @@ using Microsoft.Extensions.Logging;
 
 namespace MovieDatabaseApplication_A11.Dao;
 
-/// <summary>
-///     This concrete service and method only exists an example.
-///     It can either be copied and modified, or deleted.
-/// </summary>
 public class FileService : IFileService
 {
     private ILogger<IFileService> _logger;
     private string _fileName;
     private int? _nextId = null;
 
-    //these should not be here
+    
     private List<int> _movieIds;
     private List<string> _movieTitles;
     private List<string> _movieGenres;
@@ -25,7 +21,7 @@ public class FileService : IFileService
     public FileService(ILogger<FileService> logger)
     {
         _logger = logger;
-        logger.LogInformation("Here is some information");
+        logger.LogInformation("Welcome");
 
         _fileName = $"Files/movies.csv";
 

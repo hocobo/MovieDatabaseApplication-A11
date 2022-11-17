@@ -50,9 +50,6 @@ namespace MovieDatabaseApplication_A11
         {
             return AnsiConsole.Ask<string>($"{question} [{highlightedColor}]{highlightedText}[/]");
         }
-
-        #region examples
-        // example - not currently used - see https://spectreconsole.net for more fun!
         
         public void GetUserInput()
         {
@@ -158,7 +155,7 @@ namespace MovieDatabaseApplication_A11
 
         }
         
-        public void SchoolGetUserInput()
+        /*public void SchoolGetUserInput()
         {
             var name = AnsiConsole.Ask<string>("What is your [green]name[/]?");
             var semester = AnsiConsole.Prompt(
@@ -177,7 +174,7 @@ namespace MovieDatabaseApplication_A11
                         "[green]<enter>[/] to accept)[/]")
                     .AddChoices("History", "English", "Spanish", "Math", "Computer", "Literature", "Science",
                         "Chemistry", "Economics"));
-        }
-        #endregion
+        }*/
+        
     }
 }

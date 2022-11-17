@@ -86,3 +86,11 @@
 2022-11-15T09:35:16.6497448-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Adding a new movie
 2022-11-15T09:35:28.0134198-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Movie added
 2022-11-15T09:35:30.0858289-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Listing movies from database
+2022-11-15T09:46:38.7326901-06:00	INFO	[MovieDatabaseApplication_A11.Dao.FileService]	[0]	Here is some information
+2022-11-15T10:11:46.6896143-06:00	INFO	[MovieDatabaseApplication_A11.Dao.FileService]	[0]	Here is some information
+2022-11-15T10:11:49.4933361-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Listing movies from database
+2022-11-16T18:05:36.3609360-06:00	INFO	[MovieDatabaseApplication_A11.Dao.FileService]	[0]	Here is some information
+2022-11-16T18:05:48.8973745-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Adding a new movie
+2022-11-16T18:06:11.9649754-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Movie added
+2022-11-16T18:06:11.9668138-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Listing movies from database
+2022-11-16T18:06:22.3861466-06:00	INFO	[MovieDatabaseApplication_A11.Services.MainService]	[0]	Listing movies from database
