@@ -1,4 +1,8 @@
-﻿using MovieDatabaseApplication_A11.Context;
+﻿using ConsoleTables;
+using MovieDatabaseApplication_A11.Context;
+using MovieDatabaseApplication_A11.Dao;
+using MovieDatabaseApplication_A11.Dto;
+using MovieDatabaseApplication_A11.Mappers;
 using MovieDatabaseApplication_A11.Models;
 using Spectre.Console;
 using System;
@@ -15,17 +19,18 @@ namespace MovieDatabaseApplication_A11.Drivers
         {
             ListFromDb,
             ListFromFile,
-            Add,
+            AddMovie,
             Update,
             Delete,
             Search,
+            AddUser,
+            DisplayUsers,
+            AddNewUserRating,
             Exit
         }
-
         public Menu() // default constructor
         {
-        }
-
+        }     
         public MenuOptions ChooseAction()
         {
             var menuOptions = Enum.GetNames(typeof(MenuOptions));
@@ -37,7 +42,6 @@ namespace MovieDatabaseApplication_A11.Drivers
 
             return (MenuOptions)Enum.Parse(typeof(MenuOptions), choice);
         }
-
         public void Exit()
         {
             AnsiConsole.Write(
@@ -45,13 +49,11 @@ namespace MovieDatabaseApplication_A11.Drivers
                     .LeftAligned()
                     .Color(Color.Green));
         }
-
         public string GetUserResponse(string question, string highlightedText, string highlightedColor)
         {
             return AnsiConsole.Ask<string>($"{question} [{highlightedColor}]{highlightedText}[/]");
         }
-
-        public void GetUserInput()
+        public void AddNewMovie(IRepository repository, IGenreMapper genreMapper)
         {
             using (var db = new MovieContext())
             {
@@ -81,6 +83,16 @@ namespace MovieDatabaseApplication_A11.Drivers
                             Console.WriteLine("\nInvalid Input");
                         }
                     }
+                    /*var allGenres = repository.GetAllGenres();
+                    var genres = genreMapper.Map(allGenres);
+                    ConsoleTable.From<GenreDto>(genres).Write();
+                    Console.WriteLine("Select a genre.");                   
+                    var userSelectedGenre = Convert.ToInt64(Console.ReadLine());                    
+                    var movieGenre = new MovieGenre();
+                    var genre = allGenres.Where(x => x.Id == userSelectedGenre).FirstOrDefault();
+                    movieGenre.Genre = genre;
+                    movieGenre.Movie = movie;
+                    db.MovieGenres.Add(movieGenre);   */               
                     db.Movies.Add(movie);
                     db.SaveChanges();
 
@@ -107,7 +119,7 @@ namespace MovieDatabaseApplication_A11.Drivers
                         Console.WriteLine("Enter new release date ");
                         var releaseDate = DateTime.Parse(Console.ReadLine());
                         movie.Title = title;
-                        movie.ReleaseDate = releaseDate.ToUniversalTime();
+                        movie.ReleaseDate = releaseDate.ToUniversalTime();                        
                         db.SaveChanges();
                     }
 
@@ -154,27 +166,78 @@ namespace MovieDatabaseApplication_A11.Drivers
             }
 
         }
-
-        /*public void SchoolGetUserInput()
+        public void AddNewUser()
         {
-            var name = AnsiConsole.Ask<string>("What is your [green]name[/]?");
-            var semester = AnsiConsole.Prompt(
-                new TextPrompt<string>("For which [green]semester[/] are you registering?")
-                    .InvalidChoiceMessage("[red]That's not a valid semester[/]")
-                    .DefaultValue("Spring 2022")
-                    .AddChoice("Fall 2022")
-                    .AddChoice("Spring 2023"));
-            var classes = AnsiConsole.Prompt(
-                new MultiSelectionPrompt<string>()
-                    .Title("For which [green]classes[/] are you registering?")
-                    .PageSize(10)
-                    .MoreChoicesText("[grey](Move up and down to reveal more classes)[/]")
-                    .InstructionsText(
-                        "[grey](Press [blue]<space>[/] to toggle a class, " +
-                        "[green]<enter>[/] to accept)[/]")
-                    .AddChoices("History", "English", "Spanish", "Math", "Computer", "Literature", "Science",
-                        "Chemistry", "Economics"));
-        }*/
+            using(var db = new MovieContext())
+            {
+                long age;
+                Console.WriteLine("Enter age");
+                long.TryParse(Console.ReadLine(), out age);
+                Console.WriteLine("Enter gender");
+                var gender = Console.ReadLine();
+                Console.WriteLine("Enter zip code");
+                var zipCode = Console.ReadLine();
+                Console.WriteLine("Enter occupation");
+                var occupation = Console.ReadLine();
+                Occupation userOccupation;
+                if(db.Occupations.Any(x => x.Name == occupation))
+                {
 
+                    userOccupation = db.Occupations.Where(x => x.Name == occupation).FirstOrDefault();
+                }
+                else
+                {
+                    userOccupation = new Occupation();
+                    userOccupation.Name = occupation;
+
+                }
+
+                var newUser = new User();
+                newUser.Age = age;
+                newUser.Gender = gender;
+                newUser.ZipCode = zipCode;
+                newUser.Occupation = userOccupation;
+                db.Users.Add(newUser);
+                db.SaveChanges();
+                Console.WriteLine($"\nNew user successfully added\n" +
+                    $"UserID: {newUser.Id}\n" +
+                    $"Age: {newUser.Age}\nGender: {newUser.Gender}\n" +
+                    $"ZipCode: {newUser.ZipCode} \nOccupation: {userOccupation.Name}");
+            }
+        }
+        public void AddNewRating()
+        {
+            
+            using (var db = new MovieContext())
+            {
+                Console.WriteLine("Enter user ID ");
+                var userId = Convert.ToInt64(Console.ReadLine());
+                var user = db.Users.Where(x => x.Id == userId).FirstOrDefault();
+                Console.WriteLine("Enter the name of the movie");
+                var movie = Console.ReadLine();
+                var uMovie = db.Movies.Where(x => x.Title == movie).FirstOrDefault();
+                Console.WriteLine("Enter a rating");
+                var userRating = Convert.ToInt64(Console.ReadLine());
+
+                var userMovie = new UserMovie();
+                userMovie.User = user;
+                userMovie.Movie = uMovie;
+                userMovie.Rating = userRating;
+                userMovie.RatedAt = DateTime.Now;
+                db.UserMovies.Add(userMovie);
+                db.SaveChanges();
+
+                Console.WriteLine($"UserID: {user.Id}\n" +
+                    $"UserAge: {user.Age}\n" +
+                    $"UserGender: {user.Gender}\n" +
+                    $"UserZipCode: {user.ZipCode}\n" +
+                    $"MovieId: {uMovie.Id}\n" +
+                    $"MovieTitle: {uMovie.Title}\n" +
+                    $"MovieReleaseDate: {uMovie.ReleaseDate}\n" +
+                    $"MovieRating: {userRating}");
+                
+
+            }
+        }
     }
 }

@@ -25,6 +25,16 @@ namespace MovieDatabaseApplication_A11.Dao
             return _context.Movies.ToList();
         }
 
+        public IEnumerable<Genre> GetAllGenres()
+        {
+            return _context.Genres.ToList();
+        }
+        public IEnumerable<User> GetAllUsers()
+        {
+            var users = _context.Users.ToList();
+            return _context.Users.ToList();
+        }
+
         public IEnumerable<Movie> Search(string searchString)
         {
             var allMovies = _context.Movies;

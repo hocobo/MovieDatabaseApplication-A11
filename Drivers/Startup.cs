@@ -29,8 +29,11 @@ public class Startup
         services.AddTransient<IFileService, FileService>();
         services.AddSingleton<IRepository, Repository>();
         services.AddSingleton<IMovieMapper, MovieMapper>();
+        services.AddSingleton<IGenreMapper, GenreMapper>();
+        services.AddSingleton<IUserMapper, UserMapper>();
         services.AddDbContextFactory<MovieContext>();
         services.AddAutoMapper(typeof(MovieProfile));
+        services.AddAutoMapper(typeof(UserProfile));
 
         RegisterExceptionHandler();
 
